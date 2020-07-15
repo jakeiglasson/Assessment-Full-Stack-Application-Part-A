@@ -490,7 +490,7 @@ Stevie is a junior dev at the company that owns SPOS. They have put Stevie on a 
 
 "Sometimes I get allocated tickets that I am nowhere near ready to deal with in this point of my career, I wish someone would notice so I don't end up tearing up in front of my machine mid afternoon."
 
-### Stevie's Stories
+#### Stevie's Stories
 
 - A team member should be able to request reassignment of a ticket.
 - A team member should be able to request an assist from a colleague through the ticket allocation system.
