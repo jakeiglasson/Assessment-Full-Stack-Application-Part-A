@@ -1,27 +1,28 @@
-# R1 Website Description:
+# R1 Website Description
 
-## Purpose:
+## Purpose
+
 To build a web application that can be used to report bugs from manual testing and discovery within an organisational context, and record the progress of bug fixes applied. We want to create something we could actually use ourselves to track issues we come across even in the creation of this project itself.
 
 Some ticketing systems are quite extensive and can take a while to learn, they also require login credentials for all users. We wanted a way that someone could report a bug without potentially being put off by having to go through a registration process first.
 
 We gave some thought to agile work processes and whether this app could be built to incorporate agile workflows. Following discussions about the scope we settled on a minimum scope implementation that would achieve the ends of reporting and tracking within the context of project units/groups/.
 
-## Functionality/ features:
+## Functionality/ features
 
-We created an extensive list of user story epics in our ideation and research process. In order to meet the requirements of the project by deadline we have made decisions about what we considered the true Minimum Viable Product for an application of this kind. Some exclusions were hotly debated as they present potential problems with technical debt if the application is to be extended beyond MVP. 
+We created an extensive list of user story epics in our ideation and research process. In order to meet the requirements of the project by deadline we have made decisions about what we considered the true Minimum Viable Product for an application of this kind. Some exclusions were hotly debated as they present potential problems with technical debt if the application is to be extended beyond MVP.
 
 We also discussed possible database integrity problems around cardinality and legacy compatibility issues the MVP feature set may create.
 
-Ultimately we have created a plan for a minimalist application which will deliver the basic requirements of a bug tracker that we are confident to deliver before the deadline given the level of technical ability available in our team. 
+Ultimately we have created a plan for a minimalist application which will deliver the basic requirements of a bug tracker that we are confident to deliver before the deadline given the level of technical ability available in our team.
 
-If we are able to hit this hurdle with time to spare we intend to extend functionality further following the feature list deliverables outlined in the *Future Pipeline* section that follows our MVP feature list below.
+If we are able to hit this hurdle with time to spare we intend to extend functionality further following the feature list deliverables outlined in the _Future Pipeline_ section that follows our MVP feature list below.
 
-## Minimum Viable Product Deliverable:
+## Minimum Viable Product Deliverable
 
-### Shared (Unprotected):
+### Shared (Unprotected)
 
-#### Component Library:
+#### Component Library
 
 Views:
 
@@ -67,7 +68,7 @@ Features:
 - System overview dashboard should be able to drill down into project and ticket views
 - Can see how many bugs are open, in progress and closed
 
-#### Bug Tickets:
+#### Bug Tickets
 
 View:
 
@@ -103,7 +104,8 @@ Features:
 - can provide information on how he fixed a bug
 - can re-open bug tickets
 
-#### Projects:
+#### Projects
+
 View:
 
 - Index
@@ -113,11 +115,11 @@ Ability:
 
 - Read
 
-#### Project Manager ONLY (Protected):
+#### Project Manager ONLY (Protected)
 
 All shared elements + Ability (project manager permission set)
 
-#### Users:
+#### Users
 
 View:
 
@@ -133,7 +135,7 @@ Action:
 
 - send email invite to email list (Devs & Testers)
 
-#### Projects:
+#### Projects
 
 Views:
 
@@ -150,23 +152,23 @@ Ability:
 - update
 - delete
 
-
-#### Bug Tickets:
+#### Bug Tickets
 
 View:
 
 - delete button
 
 Components:
+
 - Sidebar links (Add User, Edit Project)
 
 Ability:
 
 - delete
 
-### Future Pipeline (stretch targets):
+### Future Pipeline (stretch targets)
 
-#### Views:
+#### Views
 
 - User index
 - Team index
@@ -178,7 +180,7 @@ Ability:
 - Graphs for reviewing progress and open tickets.
 - Count queries for: tickets, projects, users. With status breakdown
 
-#### Users:
+#### Users
 
 - User type (determines access permissions)
 - User first name
@@ -189,20 +191,20 @@ Ability:
 - can has many tickets
 - has many managers
 
-####  Teams:
+#### Teams
 
 - Team name
 - Team members index
 - Team projects index
 
-####  Tickets:
+#### Tickets
 
 - Ticket weighting (story points equivalent)
 - Priority
 - bug archive
 - sorting by header
 
-####  Processes/Helpers:
+#### Processes/Helpers
 
 - Ticket allocation/balancing
 - Notification of ticket/bug status change
@@ -211,18 +213,18 @@ Ability:
 - Request assistance on ticket
 - Request ticket reassignment
 
-#### Email:
+#### Email
 
 - receive incoming bugs?
 - send ticket status notifications and new note entries?
 - send new unassigned ticket notification to admin or project lead
 - Unsubscribe (opt out of email notifications per user preference)
 
-#### Owner/Subscriber Account:
+#### Owner/Subscriber Account
 
 - able to manage their bagukirā software subscription and payment credentials.
 
-#### Admin:
+#### Admin
 
 - admin permission set (manage: users, projects, teams)
 - project index (all organisations/companies)
@@ -235,7 +237,7 @@ Ability:
 - dashboard view: activity/progress visualisation for: user/subordinate, teams, projects, tickets.
 - Project & Team creation final approval.
 
-#### Project Manager/Team Lead:
+#### Project Manager/Team Lead
 
 - can create new teams (optional admin approval workflow)
 - can create developer and tester accounts and add them to her projects
@@ -245,9 +247,9 @@ Ability:
 - ability to assign/reassign bugs, to more than one developer
 - ability to receive notifications
 - ability to assign users to projects and teams
-- dashboard view: activity/progress visualisation for: user/subordinate, teams, projects, tickets. 
+- dashboard view: activity/progress visualisation for: user/subordinate, teams, projects, tickets.
 
-#### Developer:
+#### Developer
 
 - developer permission set
 - notification system when a new bug is submitted that he can fix (front end, back end, both)
@@ -257,7 +259,7 @@ Ability:
 - ability to send and receive notifications about new tickets or notes added to tickets picked up by or allocated to them
 - dashboard view: activity/progress visualisation for: teams, projects, tickets.
 
-#### Tester:
+#### Tester
 
 - tester permission set
 - backlog of submitted bug tickets relevant to the tester who submitted them
@@ -270,7 +272,7 @@ Ability:
 - ability to receive and send notifications about tickets submitted by them
 - dashboard view: activity/progress visualisation for: projects, tickets
 
-### Target Audience:
+### Target Audience
 
 Bagukira is a web application designed for companies to use as an internal tool in the development of software. The target audience for this application are the project managers, developers and testers of these companies in charge of bringing the software to production. Bagukira offers a platform for which these users can track and manage bugs related to the software they are building.
 
@@ -279,41 +281,52 @@ Bagukira is a web application designed for companies to use as an internal tool 
 The tech stack that Bagukira is built on is as follows:
 
 #### Frontend
+
 ##### Languages
+
 - HTML
 - CSS
 - JavaScript (ES6)
 
 ##### Frameworks
+
 - React
 - Bootstrap
 
 #### Backend
+
 ##### Languages
+
 - Ruby
 
 ##### API Framework
+
 - Ruby on Rails
 
 ##### API Web Server
+
 - Puma
 
 ##### Database
+
 - PostgreSQL
 
 #### Tools/NPM Packages/Ruby Gems
-#####
-- styled-components
-We will decide on additional appropriate gems and packages if need arises as we progress
 
+#####
+
+- styled-components
+  We will decide on additional appropriate gems and packages if need arises as we progress
 
 ##### Package/Gem management
+
 - Bundler
 - Webpack
 - npm
 - Ruby gems
 
 ##### Testing
+
 - Rspec
 - Shoulda Matchers
 - Jest
@@ -321,31 +334,35 @@ We will decide on additional appropriate gems and packages if need arises as we 
 - Will trial GitHub Actions (Integration Testing)
 
 ##### Mocking
+
 - factory_bot_rails
 - Postman
 
 ##### Source & Version Control
+
 - git
 - GitHub
 
-##### Deployment:
+##### Deployment
+
 Our React frontend is hosted on Netflify as a static page, the backend Rails API and Postgres Database is hosted on Heroku.
-## R2 Data Flow Diagram
+
+## [R2 Data Flow Diagram](https://app.lucidchart.com/invitations/accept/3e011e21-9293-4a7f-b917-d8d0c49e8f5a)
 
 ![alt text](./docs/89.png)
 ![alt text](./docs/90.png)
 
-## R3 Application Architecture Diagram
+## [R3 Application Architecture Diagram](https://app.lucidchart.com/invitations/accept/dd800c11-31d2-4a02-8b34-a022c24e038d)
 
 ![alt text](./docs/91.png)
 
-## R4 User Stories:
+## R4 User Stories
 
 ### Tester - James
 
 James is a tester, a part of the quality assurance team of a large software product being developed by Evil Corp. James has been given the task to test the software and note all the bugs that he finds.
 
-James needs to be able to identify the bug and give detailed information on it such as: when the bug occurred, what he was doing or attempting to do at the time, if possible give instructions on how to repeat the bug, miscellaneous comments relating to the bug and log this information into some sort of system that can track all the bugs he finds. 
+James needs to be able to identify the bug and give detailed information on it such as: when the bug occurred, what he was doing or attempting to do at the time, if possible give instructions on how to repeat the bug, miscellaneous comments relating to the bug and log this information into some sort of system that can track all the bugs he finds.
 
 Because James is not the only tester in the QA team, any bugs he submits will have his name on them so that if need be he can answer questions the dev team may have about the bug.
 
@@ -520,6 +537,7 @@ Alex wants to be able to create new projects and teams and see how they are prog
 - They should also be able to manage their bagukira software subscription and payment credentials.
 
 ### Casey - Store Owner
+
 Casey is the owner of a local independent grocer. They use a POS software package called ShopPOS (SPOS). Every now and then Casey's staff run into a problem and ask if they can contact support to get it solved. SPOS doesn't have phone support as they too are a small company and can't afford the overhead. Casey wants access to be able to report a bug or other problem and have it solved quickly, and get updated when it's fixed so there isn't a series of emails simply trying to follow up.
 
 They don't want to have to create every new staff member as a user in yet another system just to file a bug report or request a new feature.
@@ -562,12 +580,11 @@ Jessie is a barber from Footscray, not a hipster, but sure does cut hair for a l
 
 [> Local link to HTML of wireframes](./docs/bagukira_wireframes.html)
 
-
-## R6 Trello Board Screenshots
+## [R6 Trello Board Screenshots](https://trello.com/b/or6IcwIF/agile-sprint-board)
 
 ![alt text](./docs/92.png)
 ![alt text](./docs/93.png)
-![alt text](./docs/94png)
+![alt text](./docs/94.png)
 ![alt text](./docs/95.png)
 ![alt text](./docs/96.png)
 ![alt text](./docs/97.png)
